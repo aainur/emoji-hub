@@ -28,7 +28,7 @@ Coming soon!
 
 Clone the repository:
 
-git clone 
+git clone https://github.com/aainur/emoji-hub.git
 
 Navigate to the project directory:
 
@@ -37,8 +37,19 @@ cd emoji-hub
 Install dependencies:
 
 npm install
+cd src/services
+npm install
+npm install express cors axios dotenv
 
-Run the application:
+After installing dependencies to run and test the project locally: 
+
+First, to run the server, open the terminal: 
+
+node src/services/server.js
+The server is going to be running on port 5000
+Open your browser and navigate to http://localhost:5000 to check server is running 
+
+Open another terminal to run the application:
 
 npm start
 
