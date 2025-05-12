@@ -8,13 +8,13 @@ const EmojiList = () => {
   const [filteredEmojis, setFilteredEmojis] = useState([]);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(false); 
-  //const [page, setPage] = useState(1); 
 
   useEffect(() => {
     const fetchEmojis = async () => {
       setLoading(true); 
       try {
-        const response = await axios.get("http://localhost:5000/api/emojis");
+        //const response = await axios.get("http://localhost:5000/api/emojis");
+        const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/emojis`);
         setEmojis(response.data);
         setFilteredEmojis(response.data);
 
@@ -43,7 +43,7 @@ const EmojiList = () => {
     const sorted = [...filteredEmojis].sort((a, b) => {
       if (order === "name-asc") return a.name.localeCompare(b.name);
       if (order === "name-desc") return b.name.localeCompare(a.name);
-      return 0; // Add this line to handle cases where no match is found
+      return 0; 
     });
     setFilteredEmojis(sorted);
   };
