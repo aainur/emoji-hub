@@ -1,4 +1,4 @@
-###Emoji Hub
+Emoji Hub
 
 Emoji Hub is a web application that allows users to explore, search, and sort a rich collection of emojis. Users can easily copy emojis and filter them by categories or alphabetical order. In future versions, features like Favorites and Infinite Scrolling will be added to enhance the user experience.
 
