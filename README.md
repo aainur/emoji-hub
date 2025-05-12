@@ -1,10 +1,10 @@
-Emoji Hub
+###Emoji Hub
 
 Emoji Hub is a web application that allows users to explore, search, and sort a rich collection of emojis. Users can easily copy emojis and filter them by categories or alphabetical order. In future versions, features like Favorites and Infinite Scrolling will be added to enhance the user experience.
 
 🌐 Live Demo
 
-[Link to the deployed application] - Coming soon!
+Coming soon!
 
 🚀 Features
 
@@ -66,7 +66,7 @@ Implemented dynamic category filtering by fetching groups directly from the API.
 
 ⚖️ Compromises and Decisions
 
-Infinite Scroll vs. Loading: Chose to implement a loader instead of infinite scrolling to meet time constraints. Infinite scrolling is planned for the next update.
+Infinite Scroll vs. Loading: Chosed to implement a loader instead of infinite scrolling to meet time constraints. Infinite scrolling is planned for the next update.
 
 Favorites Functionality: Feature is still under development.
 
@@ -98,5 +98,5 @@ Ainur Aman
 
 💡 Fun Fact:
 
-All the emojis used in the application, including the ones you see in this README, were proudly copied straight from Emoji Hub! 😊
+All the emojis used in the application, including the ones you see in this README, were proudly copied straight from Emoji Hub app! 😊
 
