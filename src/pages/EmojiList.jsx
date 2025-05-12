@@ -13,8 +13,7 @@ const EmojiList = () => {
     const fetchEmojis = async () => {
       setLoading(true); 
       try {
-        //const response = await axios.get("http://localhost:5000/api/emojis");
-        const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/emojis`);
+        const response = await axios.get("http://localhost:5000/api/emojis");
         setEmojis(response.data);
         setFilteredEmojis(response.data);
 
