@@ -28,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node src/services/api/emojis.js",
-    "vercel-build": "echo 'Ready for Vercel Deployment'"
+    "vercel-build": "npm run build"
   },
   "main": "src/services/api/emojis.js",
   "eslintConfig": {
