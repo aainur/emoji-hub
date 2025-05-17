@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import EmojiCard from "../components/EmojiCard";
 import EmojiSearchAndSort from "../components/EmojiSearchAndSort";
-import axios from "axios";
+import { fetchEmojis } from "../api/emojiService";
 
 const EmojiList = () => {
   const [emojis, setEmojis] = useState([]);
@@ -10,25 +10,25 @@ const EmojiList = () => {
   const [loading, setLoading] = useState(false); 
 
   useEffect(() => {
-    const fetchEmojis = async () => {
+    const loadEmojis = async () => {
       setLoading(true); 
       try {
-        const response = await axios.get("http://localhost:5000/api/emojis");
-        setEmojis(response.data);
-        setFilteredEmojis(response.data);
+        const data = await fetchEmojis(); 
+        setEmojis(data);
+        setFilteredEmojis(data);
 
         const uniqueCategories = [
-          ...new Set(response.data.map((emoji) => emoji.group)),
+          ...new Set(data.map((emoji) => emoji.group)),
         ];
         setCategories(uniqueCategories);
       } catch (error) {
-        console.error("Error fetching emojis:", error.message);
+        console.error("Error loading emojis:", error.message);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchEmojis();
+    loadEmojis();
   }, []);
 
   const handleSearch = (searchTerm) => {

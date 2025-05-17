@@ -1,20 +1,19 @@
 {
-  "name": "services",
+  "name": "emoji-hub-backend",
   "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
+  "main": "/api/emojis.js",
+  "description": "Backend service for Emoji Hub application",
+  "author": "Your Name",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "axios": "^1.9.0",
+    "express": "^4.18.2",
     "cors": "^2.8.5",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "lucide-react": "^0.510.0"
+    "axios": "^1.3.4",
+    "dotenv": "^16.0.3"
+  },
+  "scripts": {
+    "start": "node /api/emojis.js",
+    "vercel-build": "echo 'Ready for Vercel Deployment'"
   }
 }
+
