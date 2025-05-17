@@ -4,7 +4,7 @@ Emoji Hub is a web application that allows users to explore, search, and sort a 
 
 🌐 Live Demo
 
-Coming soon!
+[emoji-hub-plum.vercel.app](https://emoji-hub-plum.vercel.app/)
 
 🚀 Features
 
